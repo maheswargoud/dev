@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deploymentdev
+metadata:
+  name: dept-dev
+  namespace: ns-dev
+spec:
+  selector:
+    matchLabels:
+      app: dept-dev
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: dept-dev
+    spec:
+      containers:
+      - name: dept-dev
+        image: 887870046594.dkr.ecr.ap-northeast-1.amazonaws.com/devecr:number
+        ports:
+        - containerPort: 80
+
+

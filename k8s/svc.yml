@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Servicedev
+metadata:
+  name: svc-dev
+  namespace: ns-dev
+spec:
+  selector:
+    app: deployment-dev
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

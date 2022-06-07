@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingressdev
+metadata:
+  name: ingress-dev
+  namespace: ns-dev
+spec:
+  rules:
+  - host: dev.maheswargoud.xyz
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: svc-dev
+            port: 
+              number: 80
