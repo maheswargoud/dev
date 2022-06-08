@@ -5,7 +5,7 @@ metadata:
   namespace: ns-dev
 spec:
   selector:
-    app: deployment-dev
+    app: dept-dev
   ports:
     - protocol: TCP
       port: 80
