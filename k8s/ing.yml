@@ -1,5 +1,5 @@
 apiVersion: networking.k8s.io/v1
-kind: Ingressdev
+kind: Ingress
 metadata:
   name: ingress-dev
   namespace: ns-dev

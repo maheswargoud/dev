@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deploymentdev
+kind: Deployment
 metadata:
   name: dept-dev
   namespace: ns-dev
