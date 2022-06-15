@@ -30,4 +30,4 @@ spec:
         ports:
         - containerPort: 80
       nodeSelector:
-        zone: us-east-2c
+        size: large
