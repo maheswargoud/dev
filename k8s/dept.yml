@@ -34,7 +34,7 @@ spec:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
             - matchExpressions:
-              - key: color
+              - key: app
                 operator: In
                 values:
-                - blue
+                - dept-dev
