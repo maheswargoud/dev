@@ -14,7 +14,7 @@ spec:
         app: dept-dev
     spec:
       nodeSelector:
-        node: ip-192-168-56-40.us-east-2.compute.internal
+        node: ip-192-168-77-167.us-east-2.compute.internal
       containers:
       - name: dept-dev
         image: 887870046594.dkr.ecr.us-east-2.amazonaws.com/devecr:number
