@@ -8,6 +8,10 @@ spec:
     matchLabels:
       app: dept-dev
   replicas: 2 # tells deployment to run 2 pods matching the template
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
   template:
     metadata:
       labels:
@@ -25,4 +29,12 @@ spec:
           limits:
             memory: "256Mi"
             cpu: 1
-
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: color
+                operator: In
+                values:
+                - blue
