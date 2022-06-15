@@ -20,15 +20,15 @@ spec:
       containers:
       - name: dept-dev
         image: 887870046594.dkr.ecr.us-east-2.amazonaws.com/devecr:number
-        ports:
-        - containerPort: 80
         resources:
           requests:
             memory: "128Mi"
-            cpu: 0.5
+            cpu: 100m
           limits:
             memory: "256Mi"
             cpu: 1
+        ports:
+        - containerPort: 80
       affinity:
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
