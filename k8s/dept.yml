@@ -29,8 +29,3 @@ spec:
             cpu: 1
         ports:
         - containerPort: 80
-      tolerations:
-      - key: "size"
-        operator: "Equal"
-        value: "large"
-        effect: "NoSchedule"
