@@ -29,6 +29,13 @@ spec:
             cpu: 1
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: mysql-persistent-storage
+          mountPath: /usr/local/apache2/htdocs
+      volumes:
+      - name: mysql-persistent-storage
+        persistentVolumeClaim:
+          claimName: local-device-pvc
       affinity:
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
