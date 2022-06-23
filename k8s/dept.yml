@@ -39,15 +39,4 @@ spec:
                operator: In
                values:
                - us-east-2a
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 80
-          initialDelaySeconds: 3
-          periodSeconds: 3
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: 80
-          initialDelaySeconds: 3
-          periodSeconds: 3
+        
