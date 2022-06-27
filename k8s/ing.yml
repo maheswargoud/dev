@@ -5,7 +5,7 @@ metadata:
   namespace: ns-dev
 spec:
   rules:
-  - host: dev.ajendra.xyz
+  - host: dev.maheswargoud.xyz
     http:
       paths:
       - pathType: Prefix

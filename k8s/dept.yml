@@ -29,16 +29,7 @@ spec:
             cpu: 1
         ports:
         - containerPort: 80
-      affinity:
-        nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 1
-            preference:
-             matchExpressions:
-             - key: zone
-               operator: In
-               values:
-               - us-east-2a
 
-               
+
+
         
