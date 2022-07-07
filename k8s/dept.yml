@@ -32,7 +32,7 @@ spec:
       volumes:
        - name: task-pv-storage
          persistentVolumeClaim:
-           claimName: PersistentVolumeClaim
+           claimName: pvc-volume
          volumeMounts:
          - mountPath: "/usr/share/data"
            name: task-pv-storage
