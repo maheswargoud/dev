@@ -29,6 +29,13 @@ spec:
             cpu: 1
         ports:
         - containerPort: 80
+      volumes:
+       - name: task-pv-storage
+         persistentVolumeClaim:
+           claimName: PersistentVolumeClaim
+         volumeMounts:
+         - mountPath: "/usr/share/data"
+           name: task-pv-storage
       affinity:
         nodeAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
