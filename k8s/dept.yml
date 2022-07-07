@@ -34,7 +34,7 @@ spec:
          persistentVolumeClaim:
            claimName: pvc-volume
          volumeMounts:
-         - mountPath: "/usr/share/data"
+         - mountPath: "/usr/local/apache2/htdocs"
            name: task-pv-storage
       affinity:
         nodeAffinity:
