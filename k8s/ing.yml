@@ -5,7 +5,7 @@ metadata:
   namespace: test
 spec:
   rules:
-  - host: dev.maheswargoud.xyz
+  - host: prod.maheswargoud.xyz
     http:
       paths:
       - pathType: Prefix
