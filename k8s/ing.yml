@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-dev
-  namespace: ns-dev
+  namespace: test
 spec:
   rules:
   - host: dev.maheswargoud.xyz
