@@ -5,7 +5,7 @@ metadata:
   namespace: static-ns
 spec:
   rules:
-  - host: prod.maheswargoud.xyz
+  - host: test.maheswargoud.xyz
     http:
       paths:
       - pathType: Prefix
