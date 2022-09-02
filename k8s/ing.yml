@@ -2,10 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-dev
-  namespace: static-ns
+  namespace: dev-ns
 spec:
   rules:
-  - host: test.maheswargoud.xyz
+  - host: static.maheswargoud.xyz
     http:
       paths:
       - pathType: Prefix

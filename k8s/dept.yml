@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dept-dev
-  namespace: static-ns
+  namespace: dev-ns
 spec:
   selector:
     matchLabels:
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: dept-dev
-        image: 303760478036.dkr.ecr.us-east-2.amazonaws.com/static-app:number
+        image: 101275806917.dkr.ecr.ap-southeast-1.amazonaws.com/static_app:number
         resources:
           requests:
             memory: "128Mi"
