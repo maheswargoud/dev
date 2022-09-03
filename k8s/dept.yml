@@ -29,6 +29,6 @@ spec:
             cpu: 1
         ports:
           - containerPort: 80
-        nodeSelector:
-          zone: ap-southeast-1a  
+      nodeSelector:
+        zone: ap-southeast-1a  
     
